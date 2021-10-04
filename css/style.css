@@ -1,0 +1,198 @@
+/*css-reset*/
+*{
+    margin:0;
+    padding:0;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navigation Bar */
+
+#navbar{
+    position:sticky;
+    display: flex;
+    align-items: center;
+    font-family: 'Baloo Bhai 2', cursive;
+    top:0px;
+}
+
+/*  Navigation Bar: logo and Image */
+#logo{
+    margin:-31px -30px;
+}
+#logo img{
+    height:64px;
+    margin:31px 45px;
+}
+/* Navigation Bar: list styling */
+#navbar ul{
+    display:flex;
+}
+
+#navbar ul li{
+    list-style:none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    color: white;
+    display:block;
+    padding:3px 22px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+#navbar::before{
+    content: "";
+    background-color:rgb(2, 1, 1);
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+#navbar ul li a:hover{
+    color:black;
+    background-color: white;
+}
+
+/* Home section */
+#home{
+    display: flex;
+    flex-direction: column;
+    padding: 3px 200px;
+    justify-content: center;
+    align-items: center;
+    height: 590px;
+}
+
+#home::before{
+    content: "";
+    background:url('../bg.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.98;
+}
+#home h1{
+    color:white;
+    font-size:3rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+#home p{
+    color:white;
+    font-size:1.5rem;
+    text-align: center;
+    font-family: 'Bree Serif', serif;
+}
+
+/* servies section */
+#service{
+    margin: 34px;
+    display: flex;
+}
+#service .box{
+    border: 2px solid brown;
+    padding: 12px 2px ;
+    margin: 3px 55px;
+    border-radius:23px;
+    background-color:rgb(207, 201, 219)
+}
+#service .box img{
+    height:100px;
+    margin:auto;
+    display:block;
+}
+#service p{
+    font-family: 'Bree Serif', serif;
+    font-size:0.8rem;
+
+} 
+/* Client Section */
+#client{
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+#client-section{
+    height: 344px;
+}
+#client img{
+    height:110px;
+}
+.client-item{
+    padding:34px;
+}
+#client-section::before{
+    content: "";
+    background:url('../bg1.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:50%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+/* contact sections */
+#contact{
+    position:relative;
+}
+#contact-box{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding-bottom: 34px;
+}
+#contact-box input,
+#contact-box textarea{
+    width:100%;
+    padding:0.4rem;
+    border-radius: 9px;
+    font-size:0.9rem;
+}
+#contact-box form{
+    width:40%;
+    font-family: 'Bree Serif', serif;
+}
+#contact-box label{
+    font-size: 0.9rem;
+}
+#contact::before{
+    content: "";
+    background:url('../contact.jpg') no-repeat center center/cover;
+    position: absolute;
+    height:100%;
+    width:100%;
+    z-index: -1;
+    opacity: 0.3;
+}
+footer{
+    background-color:black;
+    color:white;
+    padding: 9px 20px;
+}
+/* Uitility classes */
+.h-primary{
+    font-size:3rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.h-secondary{
+    font-size:1.5rem;
+    padding: 12px;
+    font-family: 'Bree Serif', serif;
+}
+.btn{
+    padding:7px 17px;
+    border:2px solid white;
+    background-color:rgb(185, 25, 25);
+    margin: 17px;
+    color:white;
+    border-radius: 13px;
+    cursor: pointer;
+    font-size:20px;
+}
+.center{
+    text-align: center
+}
